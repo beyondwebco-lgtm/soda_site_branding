@@ -222,13 +222,13 @@ document.addEventListener('DOMContentLoaded', () => {
         <div>
           <span class="modal-flavor-subtitle" style="color: ${data.color};">${data.badge}</span>
           <h3 class="modal-flavor-title" id="modalTitle">${data.name}</h3>
-          <p style="font-size: 0.95rem; font-weight: 600; color: #444; margin-top: 4px;">
-            <strong>Aroma Notes:</strong> ${data.notes}
+          <p style="font-size: 0.95rem; font-weight: 600; color: #BBBBBB; margin-top: 4px;">
+            <strong style="color: #FFFFFF;">Aroma Notes:</strong> ${data.notes}
           </p>
         </div>
       </div>
 
-      <p style="font-size: 1.05rem; line-height: 1.6; color: #333; margin-bottom: 20px;">
+      <p style="font-size: 1.05rem; line-height: 1.6; color: #E0E0E0; margin-bottom: 20px;">
         ${data.desc}
       </p>
 
@@ -247,11 +247,11 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
 
-      <div style="background-color: #fff; padding: 16px; border-radius: 12px; border: 1.5px solid rgba(24,24,24,0.1); margin-bottom: 24px;">
-        <h5 style="font-family: var(--font-heading); font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">
+      <div style="background-color: #1E1E1E; padding: 16px; border-radius: 12px; border: 1.5px solid rgba(255,255,255,0.1); margin-bottom: 24px;">
+        <h5 style="font-family: var(--font-heading); font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.5px; color: #FFFFFF; margin-bottom: 6px;">
           Clean Ingredients
         </h5>
-        <p style="font-size: 0.85rem; color: #666; line-height: 1.5;">
+        <p style="font-size: 0.85rem; color: #AAAAAA; line-height: 1.5;">
           ${data.ingredients}
         </p>
       </div>
