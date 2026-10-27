@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" width="100%" height="100%">
+  <defs>
+    <!-- Aluminum rim gradients -->
+    <linearGradient id="metalRim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#999"/>
+      <stop offset="25%" stop-color="#E2E2E2"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="75%" stop-color="#CCCCCC"/>
+      <stop offset="100%" stop-color="#777"/>
+    </linearGradient>
+
+    <!-- Orange Blast body gradient -->
+    <linearGradient id="orangeCanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E04D1B"/>
+      <stop offset="18%" stop-color="#FF6B35"/>
+      <stop offset="45%" stop-color="#FFA06B"/>
+      <stop offset="70%" stop-color="#FF6B35"/>
+      <stop offset="100%" stop-color="#B83408"/>
+    </linearGradient>
+
+    <!-- Metallic cylinder highlight overlay -->
+    <linearGradient id="sheenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.3"/>
+      <stop offset="20%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="42%" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <radialGradient id="bubbleGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#FFE66D" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FF6B35" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Drop shadow filter -->
+    <filter id="softShadow" x="-20%" y="-10%" width="140%" height="130%">
+      <feDropShadow dx="0" dy="24" stdDeviation="16" flood-color="#181818" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Can Group -->
+  <g filter="url(#softShadow)">
+    <!-- Bottom tapered base -->
+    <path d="M 85,580 L 100,635 C 100,645 130,652 200,652 C 270,652 300,645 300,635 L 315,580 Z" fill="url(#metalRim)"/>
+    
+    <!-- Main Can Body -->
+    <rect x="75" y="110" width="250" height="475" rx="20" fill="url(#orangeCanGrad)"/>
+
+    <!-- Specular / Metallic Sheen overlay -->
+    <rect x="75" y="110" width="250" height="475" rx="20" fill="url(#sheenGrad)"/>
+
+    <!-- Decorative Wave Patterns on can -->
+    <path d="M 75,320 Q 150,280 200,330 T 325,300 L 325,480 Q 250,520 200,470 T 75,500 Z" fill="#FFE66D" fill-opacity="0.25"/>
+    
+    <!-- Bubbles on can -->
+    <circle cx="120" cy="220" r="14" fill="url(#bubbleGrad)"/>
+    <circle cx="140" cy="180" r="8" fill="url(#bubbleGrad)"/>
+    <circle cx="280" cy="240" r="12" fill="url(#bubbleGrad)"/>
+    <circle cx="260" cy="420" r="16" fill="url(#bubbleGrad)"/>
+    <circle cx="130" cy="460" r="10" fill="url(#bubbleGrad)"/>
+    <circle cx="180" cy="510" r="12" fill="url(#bubbleGrad)"/>
+
+    <!-- Top tapered collar -->
+    <path d="M 75,125 L 98,62 C 105,52 140,48 200,48 C 260,48 295,52 302,62 L 325,125 Z" fill="url(#metalRim)"/>
+
+    <!-- Can Top Rim / Lip -->
+    <ellipse cx="200" cy="52" rx="98" ry="16" fill="url(#metalRim)" stroke="#ffffff" stroke-width="2"/>
+    <ellipse cx="200" cy="51" rx="88" ry="12" fill="#E8E8E8" stroke="#B0B0B0" stroke-width="1.5"/>
+
+    <!-- Pop Tab -->
+    <rect x="188" y="44" width="24" height="24" rx="6" fill="#D0D0D0" stroke="#888" stroke-width="1.5"/>
+    <circle cx="200" cy="54" r="5" fill="#B0B0B0"/>
+
+    <!-- Brand Typography: FIZZUP -->
+    <text x="200" y="275" font-family="'Fredoka', 'Impact', sans-serif" font-weight="900" font-size="62" fill="#FFFFFF" text-anchor="middle" letter-spacing="3" transform="rotate(-6 200 275)">FIZZUP</text>
+
+    <!-- Starburst / Accent badge -->
+    <rect x="125" y="315" width="150" height="34" rx="17" fill="#FFE66D" transform="rotate(-6 200 315)"/>
+    <text x="200" y="338" font-family="'Fredoka', 'Arial Black', sans-serif" font-weight="800" font-size="16" fill="#181818" text-anchor="middle" letter-spacing="2" transform="rotate(-6 200 315)">ORANGE BLAST</text>
+
+    <!-- Small details -->
+    <text x="200" y="385" font-family="sans-serif" font-weight="700" font-size="12" fill="#FFFFFF" fill-opacity="0.9" text-anchor="middle" letter-spacing="2">SPARKLING SODA • 330ML</text>
+    
+    <text x="200" y="415" font-family="sans-serif" font-weight="600" font-size="11" fill="#FFE66D" text-anchor="middle" letter-spacing="1">BOLD BUBBLES • 100% REAL JUICE</text>
+
+    <!-- Slice graphic icon on can -->
+    <g transform="translate(165, 435)">
+      <circle cx="35" cy="35" r="28" fill="#FFE66D" fill-opacity="0.3"/>
+      <path d="M 35,10 A 25 25 0 0 1 60 35 L 35 35 Z" fill="#FFE66D"/>
+      <path d="M 60,35 A 25 25 0 0 1 35 60 L 35 35 Z" fill="#FFA06B"/>
+      <path d="M 35,60 A 25 25 0 0 1 10 35 L 35 35 Z" fill="#FFE66D"/>
+      <path d="M 10,35 A 25 25 0 0 1 35 10 L 35 35 Z" fill="#FFA06B"/>
+    </g>
+
+    <!-- Condensation droplets -->
+    <ellipse cx="110" cy="270" rx="3" ry="5" fill="#FFFFFF" fill-opacity="0.7"/>
+    <ellipse cx="295" cy="330" rx="3.5" ry="6" fill="#FFFFFF" fill-opacity="0.7"/>
+    <ellipse cx="140" cy="370" rx="2.5" ry="4" fill="#FFFFFF" fill-opacity="0.7"/>
+    <ellipse cx="280" cy="480" rx="3" ry="5" fill="#FFFFFF" fill-opacity="0.7"/>
+    <ellipse cx="115" cy="540" rx="3" ry="5" fill="#FFFFFF" fill-opacity="0.7"/>
+
+    <!-- Placeholder Badge Overlay -->
+    <rect x="90" y="525" width="220" height="26" rx="6" fill="#181818" fill-opacity="0.85"/>
+    <text x="200" y="542" font-family="monospace" font-size="10.5" fill="#FFE66D" text-anchor="middle" font-weight="bold">PLACEHOLDER: ORANGE BLAST</text>
+  </g>
+</svg>

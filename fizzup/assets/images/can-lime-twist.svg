@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 700" width="100%" height="100%">
+  <defs>
+    <!-- Aluminum rim gradients -->
+    <linearGradient id="metalRimLime" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#999"/>
+      <stop offset="25%" stop-color="#E2E2E2"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="75%" stop-color="#CCCCCC"/>
+      <stop offset="100%" stop-color="#777"/>
+    </linearGradient>
+
+    <!-- Lime Twist body gradient -->
+    <linearGradient id="limeCanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#72AF23"/>
+      <stop offset="18%" stop-color="#9DE544"/>
+      <stop offset="45%" stop-color="#DDFCB2"/>
+      <stop offset="70%" stop-color="#B8F36B"/>
+      <stop offset="100%" stop-color="#558C12"/>
+    </linearGradient>
+
+    <!-- Metallic cylinder highlight overlay -->
+    <linearGradient id="sheenGradLime" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.3"/>
+      <stop offset="20%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="42%" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <radialGradient id="bubbleGradLime" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#FFE66D" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#B8F36B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Drop shadow filter -->
+    <filter id="softShadowLime" x="-20%" y="-10%" width="140%" height="130%">
+      <feDropShadow dx="0" dy="24" stdDeviation="16" flood-color="#181818" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Can Group -->
+  <g filter="url(#softShadowLime)">
+    <!-- Bottom tapered base -->
+    <path d="M 85,580 L 100,635 C 100,645 130,652 200,652 C 270,652 300,645 300,635 L 315,580 Z" fill="url(#metalRimLime)"/>
+    
+    <!-- Main Can Body -->
+    <rect x="75" y="110" width="250" height="475" rx="20" fill="url(#limeCanGrad)"/>
+
+    <!-- Specular / Metallic Sheen overlay -->
+    <rect x="75" y="110" width="250" height="475" rx="20" fill="url(#sheenGradLime)"/>
+
+    <!-- Decorative Wave Patterns on can -->
+    <path d="M 75,310 Q 160,260 200,320 T 325,280 L 325,470 Q 230,510 200,440 T 75,480 Z" fill="#181818" fill-opacity="0.08"/>
+    
+    <!-- Bubbles on can -->
+    <circle cx="120" cy="190" r="14" fill="url(#bubbleGradLime)"/>
+    <circle cx="280" cy="220" r="12" fill="url(#bubbleGradLime)"/>
+    <circle cx="140" cy="390" r="15" fill="url(#bubbleGradLime)"/>
+    <circle cx="270" cy="420" r="9" fill="url(#bubbleGradLime)"/>
+    <circle cx="170" cy="500" r="12" fill="url(#bubbleGradLime)"/>
+
+    <!-- Top tapered collar -->
+    <path d="M 75,125 L 98,62 C 105,52 140,48 200,48 C 260,48 295,52 302,62 L 325,125 Z" fill="url(#metalRimLime)"/>
+
+    <!-- Can Top Rim / Lip -->
+    <ellipse cx="200" cy="52" rx="98" ry="16" fill="url(#metalRimLime)" stroke="#ffffff" stroke-width="2"/>
+    <ellipse cx="200" cy="51" rx="88" ry="12" fill="#E8E8E8" stroke="#B0B0B0" stroke-width="1.5"/>
+
+    <!-- Pop Tab -->
+    <rect x="188" y="44" width="24" height="24" rx="6" fill="#D0D0D0" stroke="#888" stroke-width="1.5"/>
+    <circle cx="200" cy="54" r="5" fill="#B0B0B0"/>
+
+    <!-- Brand Typography: FIZZUP -->
+    <text x="200" y="275" font-family="'Fredoka', 'Impact', sans-serif" font-weight="900" font-size="62" fill="#181818" text-anchor="middle" letter-spacing="3" transform="rotate(-6 200 275)">FIZZUP</text>
+
+    <!-- Starburst / Accent badge -->
+    <rect x="125" y="315" width="150" height="34" rx="17" fill="#181818" transform="rotate(-6 200 315)"/>
+    <text x="200" y="338" font-family="'Fredoka', 'Arial Black', sans-serif" font-weight="800" font-size="16" fill="#B8F36B" text-anchor="middle" letter-spacing="2" transform="rotate(-6 200 315)">LIME TWIST</text>
+
+    <!-- Small details -->
+    <text x="200" y="385" font-family="sans-serif" font-weight="700" font-size="12" fill="#181818" text-anchor="middle" letter-spacing="2">SPARKLING SODA • 330ML</text>
+    
+    <text x="200" y="415" font-family="sans-serif" font-weight="600" font-size="11" fill="#2E5507" text-anchor="middle" letter-spacing="1">KEY LIME &amp; MINT INFUSED</text>
+
+    <!-- Lime wedge graphic icon on can -->
+    <g transform="translate(165, 435)">
+      <path d="M 35,65 A 35 35 0 0 1 35 5 Z" fill="#2E5507"/>
+      <path d="M 35,60 A 30 30 0 0 1 35 10 Z" fill="#FFFFFF"/>
+      <path d="M 35,56 A 26 26 0 0 1 35 14 Z" fill="#B8F36B"/>
+      <line x1="35" y1="35" x2="16" y2="23" stroke="#FFFFFF" stroke-width="2"/>
+      <line x1="35" y1="35" x2="10" y2="35" stroke="#FFFFFF" stroke-width="2"/>
+      <line x1="35" y1="35" x2="16" y2="47" stroke="#FFFFFF" stroke-width="2"/>
+    </g>
+
+    <!-- Condensation droplets -->
+    <ellipse cx="110" cy="270" rx="3" ry="5" fill="#FFFFFF" fill-opacity="0.8"/>
+    <ellipse cx="295" cy="330" rx="3.5" ry="6" fill="#FFFFFF" fill-opacity="0.8"/>
+    <ellipse cx="125" cy="430" rx="2.5" ry="4" fill="#FFFFFF" fill-opacity="0.8"/>
+    <ellipse cx="280" cy="490" rx="3" ry="5" fill="#FFFFFF" fill-opacity="0.8"/>
+
+    <!-- Placeholder Badge Overlay -->
+    <rect x="90" y="525" width="220" height="26" rx="6" fill="#181818" fill-opacity="0.85"/>
+    <text x="200" y="542" font-family="monospace" font-size="10.5" fill="#B8F36B" text-anchor="middle" font-weight="bold">PLACEHOLDER: LIME TWIST</text>
+  </g>
+</svg>
